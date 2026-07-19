@@ -6,12 +6,6 @@
       "email": "testing@gmail.com",
       "passwordHash": "$2a$12$wM1374NU73LvQaIvLKoMUO1Q6pQFnaDswbQeN4rs/85Es7VNYNZBu"
     },
-    {
-      "id": "1784480140817",
-      "username": "Anubhavkumar",
-      "email": "anubhavkumar2607@gmail.com",
-      "passwordHash": "$2b$10$CybLoOloKczMXAzLLbU4oeu5Z4oHeGrVgDp4esgUSZrb.eFKGpsUG"
-    }
   ],
   "posts": [
     {
@@ -20,11 +14,5 @@
       "content": "Welcome to Hiveup — your purple-powered space for sharing ideas, photos, and stories. Create an account to post and explore the feed!",
       "createdAt": 1710750000000
     },
-    {
-      "id": "1784480224689",
-      "author": "Anubhavkumar",
-      "content": "hello, everyone!!!\ni am anubhav kumar, 21 \nand happy to connect witth you",
-      "createdAt": 1784480224689
-    }
   ]
 }
