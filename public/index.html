@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiveup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-row">
+          <div class="brand-mark">HU</div>
+          <div>
+            <h1>Hiveup</h1>
+            <p>Your purple content sharing community</p>
+          </div>
+        </div>
+        <button id="logoutBtn" class="secondary-button hidden">Logout</button>
+      </header>
+
+      <main id="mainContent"></main>
+    </div>
+
+    <template id="auth-template">
+      <section class="hero-card auth-card">
+        <div class="logo-badge">H</div>
+        <h2>Join Hiveup</h2>
+        <p>Log in or sign up to share stories, photos, and ideas with your community.</p>
+        <div class="toggle-row">
+          <button id="showLogin" class="tab-button active">Login</button>
+          <button id="showSignup" class="tab-button">Sign Up</button>
+        </div>
+        <form id="authForm" class="auth-form">
+          <div class="field-group hidden" id="usernameGroup">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" autocomplete="username" />
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" />
+          </div>
+          <div class="field-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" />
+          </div>
+          <button type="submit" class="primary-button">Continue</button>
+          <div class="message" id="authMessage"></div>
+        </form>
+      </section>
+    </template>
+
+    <template id="feed-template">
+      <section class="feed-header">
+        <div>
+          <p class="eyebrow">Welcome back to Hiveup</p>
+          <h2 id="welcomeTitle">Share your latest idea.</h2>
+        </div>
+        <button id="refreshBtn" class="secondary-button">Refresh feed</button>
+      </section>
+      <section class="post-card">
+        <textarea id="postContent" rows="4" placeholder="Share what's on your mind..." aria-label="Share a post"></textarea>
+        <button id="postButton" class="primary-button">Post</button>
+        <div class="message" id="postMessage"></div>
+      </section>
+      <section class="feed-list" id="feedList"></section>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
